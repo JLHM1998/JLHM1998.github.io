@@ -1,0 +1,118 @@
+/* 
+  This file contains the CSS styles for the website, defining the layout and appearance of the elements.
+*/
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-section .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Research Section */
+#research {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #e9ecef;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Technologies Section */
+.tech-stack {
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.tech-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech-item {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Timeline Section */
+.timeline {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.timeline-item {
+    margin: 20px 0;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007BFF;
+    color: white;
+}
