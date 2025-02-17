@@ -1,193 +1,197 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ingeniero Agrícola especializado en Agricultura de Precisión. Soluciones innovadoras para optimizar recursos hídricos y productividad." />
-  <title>José L.H. | Ingeniería Agrícola y Agricultura de Precisión</title>
+  <meta name="description" content="Agricultural Engineer specialized in Precision Agriculture. Innovative solutions to optimize water resources and productivity." />
+  <title>José L.H. | Agricultural Engineering and Precision Agriculture</title>
   
-  <!-- Fuentes y Recursos Externos -->
+  <!-- External Fonts and Resources -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   
-  <!-- Hoja de Estilos Externa -->
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="assets/styles/styles.css" />
 </head>
 <body>
-  <!-- Sección Principal / Hero -->
+  <!-- Main Section / Hero -->
   <header class="hero-section">
-    <button class="toggle-dark" id="toggleDark">Modo Oscuro</button>
-    <img src="assets/images/matrice300.jpg" alt="Icono de Drone" class="drone-animation" style="width: 400px; height: 300px;">
-    <h1>Agricultura Innovadora con Tecnología de Punta</h1>
-    <p class="subtitle">Optimizando recursos hídricos y aumentando la productividad con drones y análisis satelital</p>
-    <a href="#contact" class="cta-button">Consulta Gratuita</a>
+    <button class="toggle-dark" id="toggleDark">Dark Mode</button>
+    <div class="hero-content">
+      <img src="assets/images/matrice300.jpg" alt="Drone Icon" class="drone-animation" style="width: 400px; height: 300px;">
+      <div class="hero-text">
+        <h1>Innovative Agriculture with Cutting-Edge Technology</h1>
+        <p class="subtitle">Optimizing water resources and increasing productivity with drones and satellite analysis</p>
+        <a href="#contact" class="cta-button">Free Consultation</a>
+      </div>
+    </div>
   </header>
 
-  <!-- Sección de Trabajos de Investigación -->
+  <!-- Research Section -->
   <section id="research">
-    <h3>Trabajos de Investigación</h3>
-    <p style="text-align:center; padding:0 20px;">Participación activa en investigaciones de agricultura de precisión:</p>
+    <h3>Research Works</h3>
+    <p style="text-align:center; padding:0 20px;">Active participation in precision agriculture research:</p>
     <div class="cards-container">
       <div class="card" onclick="window.open('https://www.mdpi.com/2072-4292/17/4/632', '_blank')">
         <div class="card-content">
-          <h4>Artículo 1</h4>
-          <p>"Predicción del rendimiento del arroz utilizando índices espectrales y texturales derivados de imágenes UAV y modelos de Machine Learning en Lambayeque, Perú"</p>
+          <h4>Article 1</h4>
+          <p>"Rice yield prediction using spectral and textural indices derived from UAV images and Machine Learning models in Lambayeque, Peru"</p>
         </div>
       </div>
       <div class="card" onclick="window.open('https://www.mdpi.com/2072-4292/16/20/3882', '_blank')">
         <div class="card-content">
-          <h4>Artículo 2</h4>
-          <p>"Eficiencia en el uso del agua en arroz mediante técnicas de riego intermitente y modelos de balance energético con información UAV y AquaCrop en Lambayeque, Perú"</p>
+          <h4>Article 2</h4>
+          <p>"Water use efficiency in rice through intermittent irrigation techniques and energy balance models with UAV and AquaCrop information in Lambayeque, Peru"</p>
         </div>
       </div>
       <div class="card" onclick="window.open('https://www.mdpi.com/2072-4292/16/5/796', '_blank')">
         <div class="card-content">
-          <h4>Artículo 3</h4>
-          <p>"Índice de Estrés Hídrico y Conductancia Estomática bajo diferentes regímenes de riego en campos de arroz de la Costa Norte del Perú"</p>
+          <h4>Article 3</h4>
+          <p>"Water Stress Index and Stomatal Conductance under different irrigation regimes in rice fields of the Northern Coast of Peru"</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Tecnologías -->
+  <!-- Technologies Section -->
   <section class="tech-stack">
-    <h3>Tecnologías que Domino</h3>
+    <h3>Technologies I Master</h3>
     <div class="tech-grid">
       <div class="tech-item">
         <i class="fas fa-satellite fa-3x"></i>
-        <p>Análisis Satelital</p>
+        <p>Satellite Analysis</p>
       </div>
       <div class="tech-item">
-        <i class="fas fa-drone fa-3x"></i>
-        <p>Mapeo con Drones</p>
+        <i class="fas fa-helicopter fa-3x"></i>
+        <p>Drone Mapping</p>
       </div>
       <div class="tech-item">
         <i class="fas fa-tint fa-3x"></i>
-        <p>Manejo del Agua</p>
+        <p>Water Management</p>
       </div>
       <div class="tech-item">
         <i class="fas fa-seedling fa-3x"></i>
-        <p>Análisis de Cultivos</p>
+        <p>Crop Analysis</p>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Estudios de Caso -->
+  <!-- Case Studies Section -->
   <section id="cases">
-    <h3>Estudios de Caso</h3>
+    <h3>Case Studies</h3>
     <div class="cards-container">
       <div class="case-study">
-        <img src="campo-antess.jpg" alt="Campo antes de la intervención">
+        <img src="campo-antess.jpg" alt="Field before intervention">
         <div class="case-study-overlay">
-          <h4>Aumento del 40% en la Productividad del Arroz</h4>
-          <p>Técnicas de riego optimizadas mediante análisis multiespectral</p>
-          <a href="#" class="cta-small">Ver Estudio Completo</a>
+          <h4>40% Increase in Rice Productivity</h4>
+          <p>Optimized irrigation techniques through multispectral analysis</p>
+          <a href="#" class="cta-small">View Full Study</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Trayectoria Profesional -->
+  <!-- Professional Timeline Section -->
   <section id="timeline">
-    <h3>Trayectoria Profesional</h3>
+    <h3>Professional Timeline</h3>
     <div class="timeline">
       <div class="timeline-item">
-        <h4>2023 - Presente</h4>
-        <p>Investigación en Agricultura de Precisión - Universidad Nacional</p>
+        <h4>2023 - Present</h4>
+        <p>Precision Agriculture Research - National University</p>
       </div>
       <div class="timeline-item">
         <h4>2021-2023</h4>
-        <p>Implementación de Sistemas de Riego Inteligente - Proyectos Regionales</p>
+        <p>Implementation of Smart Irrigation Systems - Regional Projects</p>
       </div>
     </div>
   </section>
 
-  <!-- Sección del Mapa -->
+  <!-- Map Section -->
   <section id="mapSection">
-    <h3>Ubicaciones de Trabajo</h3>
-    <div id="map"></div>
+    <h3>Work Locations</h3>
+    <iframe id="mapFrame" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
-  <!-- Sección del Blog -->
+  <!-- Blog Section -->
   <section id="blog">
-    <h3>Últimas Publicaciones</h3>
+    <h3>Latest Posts</h3>
     <div class="blog-posts">
       <div class="blog-post">
-        <h4>Innovaciones en Agricultura de Precisión</h4>
+        <h4>Innovations in Precision Agriculture</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac metus id dui luctus feugiat...</p>
-        <a href="#">Leer más</a>
+        <a href="#">Read more</a>
       </div>
       <div class="blog-post">
-        <h4>Manejo Sostenible de Recursos Hídricos</h4>
+        <h4>Sustainable Water Resource Management</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac metus id dui luctus feugiat...</p>
-        <a href="#">Leer más</a>
+        <a href="#">Read more</a>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Proyectos en GitHub -->
+  <!-- GitHub Projects Section -->
   <section id="projects">
-    <h3>Proyectos en GitHub</h3>
+    <h3>GitHub Projects</h3>
     <div class="projects">
       <div class="project-card" onclick="window.open('https://github.com/JLHM1998/project1', '_blank')">
-        <h4>Proyecto 1</h4>
-        <p>Breve descripción del proyecto.</p>
+        <h4>Project 1</h4>
+        <p>Brief project description.</p>
       </div>
       <div class="project-card" onclick="window.open('https://github.com/JLHM1998/project2', '_blank')">
-        <h4>Proyecto 2</h4>
-        <p>Breve descripción del proyecto.</p>
+        <h4>Project 2</h4>
+        <p>Brief project description.</p>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Testimonios -->
+  <!-- Testimonials Section -->
   <section id="testimonials">
-    <h3>Testimonios</h3>
+    <h3>Testimonials</h3>
     <div class="testimonials">
       <div class="testimonial">
-        <p>"José es un visionario en la agricultura de precisión. Su investigación ha impactado significativamente nuestro campo."</p>
-        <strong>- Colega A</strong>
+        <p>"José is a visionary in precision agriculture. His research has significantly impacted our field."</p>
+        <strong>- Colleague A</strong>
       </div>
       <div class="testimonial">
-        <p>"Un verdadero innovador, José combina pasión y experiencia técnica en cada proyecto."</p>
-        <strong>- Colega B</strong>
+        <p>"A true innovator, José combines passion and technical expertise in every project."</p>
+        <strong>- Colleague B</strong>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Estadísticas en GitHub -->
+  <!-- GitHub Stats Section -->
   <section id="githubStats" style="text-align:center; padding:40px 20px;">
-    <h3>Estadísticas en GitHub</h3>
-    <img src="https://github-readme-stats.vercel.app/api?username=JLHM1998&show_icons=true&count_private=true" alt="Estadísticas de GitHub de JLHM1998" />
+    <h3>GitHub Stats</h3>
+    <img src="https://github-readme-stats.vercel.app/api?username=JLHM1998&show_icons=true&count_private=true" alt="GitHub Stats of JLHM1998" />
   </section>
 
-  <!-- Sección de Contacto -->
+  <!-- Contact Section -->
   <section id="contact">
-    <h3>¿Listo para Optimizar Tu Producción?</h3>
+    <h3>Ready to Optimize Your Production?</h3>
     <div class="contact-form">
       <form>
         <div class="form-group">
-          <input type="text" placeholder="Nombre" required>
+          <input type="text" placeholder="Name" required>
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Correo Electrónico" required>
+          <input type="email" placeholder="Email" required>
         </div>
         <div class="form-group">
-          <textarea placeholder="Describe tu proyecto" rows="5" required></textarea>
+          <textarea placeholder="Describe your project" rows="5" required></textarea>
         </div>
-        <button type="submit">Enviar Consulta</button>
+        <button type="submit">Send Inquiry</button>
       </form>
       <div class="contact-info">
-        <h4>Contacto Directo</h4>
+        <h4>Direct Contact</h4>
         <p><i class="fas fa-phone"></i> +51 999201164</p>
         <p><i class="fas fa-envelope"></i> joluhumu98@gmail.com</p>
-        <p><i class="fas fa-map-marker"></i> La Molina, Lima-Perú</p>
+        <p><i class="fas fa-map-marker"></i> La Molina, Lima-Peru</p>
       </div>
     </div>
   </section>
 
-  <!-- Scripts Externos -->
+  <!-- External Scripts -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="assets/scripts/scripts.js"></script>
 </body>
