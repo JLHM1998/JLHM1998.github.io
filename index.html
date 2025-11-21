@@ -3,182 +3,339 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Agricultural Engineer specialized in Precision Agriculture. Innovative solutions to optimize water resources and productivity." />
-  <title>José L.H. | Agricultural Engineering and Precision Agriculture</title>
-  
-  <!-- External Fonts and Resources -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  
-  <!-- External Stylesheet -->
+  <meta name="description"
+        content="Consulting in precision agriculture, remote sensing, UAVs and water resources. Crop water stress (CWSI), evapotranspiration modeling and Google Earth Engine workflows." />
+  <title>José L.H. | Precision Agriculture & Remote Sensing Consultant</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Main Styles -->
   <link rel="stylesheet" href="assets/styles/styles.css" />
 </head>
 <body>
-  <!-- Main Section / Hero -->
-  <header class="hero-section">
-    <button class="toggle-dark" id="toggleDark">Dark Mode</button>
+  <!-- Top Navigation -->
+  <nav class="main-nav">
+    <div class="nav-logo">
+      <span class="logo-mark">JLH</span>
+      <span class="logo-text">Remote Sensing & Precision Agriculture</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#cases">Case Studies</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="toggle-dark" id="toggleDark" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
     <div class="hero-content">
-      <img src="assets/images/matrice300.jpg" alt="Drone Icon" class="drone-animation" style="width: 400px; height: 300px;">
       <div class="hero-text">
-        <h1>Innovative Agriculture with Cutting-Edge Technology</h1>
-        <p class="subtitle">Optimizing water resources and increasing productivity with drones and satellite analysis</p>
-        <a href="#contact" class="cta-button">Free Consultation</a>
+        <h1>Precision Agriculture & Remote Sensing Consulting</h1>
+        <p class="subtitle">
+          I help agricultural projects and institutions use <strong>satellites, UAVs and
+          evapotranspiration models</strong> to optimize water use, monitor crop stress
+          and increase productivity.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="cta-button">Request a Consultation</a>
+          <a href="#services" class="cta-secondary">View Services</a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge">RENACYT – Level VII</span>
+          <span class="badge">4 Q1 Publications</span>
+          <span class="badge">Certified UAV Pilot (DGAC)</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/matrice300.jpg"
+             alt="DJI Matrice 300 RTK UAV"
+             class="drone-animation"
+             style="width: 400px; height: 300px;">
       </div>
     </div>
   </header>
 
-  <!-- Research Section -->
-  <section id="research">
-    <h3>Research Works</h3>
-    <p style="text-align:center; padding:0 20px;">Active participation in precision agriculture research:</p>
+  <!-- Services Section -->
+  <section id="services" class="section reveal">
+    <h2>Consulting Services</h2>
+    <p class="section-intro">
+      I provide technical support for research groups, agribusinesses and institutions
+      seeking to implement <strong>data-driven water management and precision agriculture</strong>.
+    </p>
     <div class="cards-container">
-      <div class="card" onclick="window.open('https://www.mdpi.com/2072-4292/17/4/632', '_blank')">
+      <div class="card">
         <div class="card-content">
-          <h4>Article 1</h4>
-          <p>"Rice yield prediction using spectral and textural indices derived from UAV images and Machine Learning models in Lambayeque, Peru"</p>
+          <h4><i class="fas fa-water"></i> ET & CWSI Modeling</h4>
+          <p>
+            Design and implementation of workflows for <strong>evapotranspiration (ETa/ETc)</strong>
+            and <strong>Crop Water Stress Index (CWSI)</strong> using METRIC, TSEB, AquaCrop and
+            thermal imagery (UAV + satellites).
+          </p>
         </div>
       </div>
-      <div class="card" onclick="window.open('https://www.mdpi.com/2072-4292/16/20/3882', '_blank')">
+      <div class="card">
         <div class="card-content">
-          <h4>Article 2</h4>
-          <p>"Water use efficiency in rice through intermittent irrigation techniques and energy balance models with UAV and AquaCrop information in Lambayeque, Peru"</p>
+          <h4><i class="fas fa-satellite"></i> Remote Sensing Pipelines</h4>
+          <p>
+            Development of <strong>Google Earth Engine</strong> scripts and Python workflows
+            for multitemporal analysis with Sentinel-2 and Landsat 8/9:
+            vegetation indices, texture metrics, land use and crop monitoring.
+          </p>
         </div>
       </div>
-      <div class="card" onclick="window.open('https://www.mdpi.com/2072-4292/16/5/796', '_blank')">
+      <div class="card">
         <div class="card-content">
-          <h4>Article 3</h4>
-          <p>"Water Stress Index and Stomatal Conductance under different irrigation regimes in rice fields of the Northern Coast of Peru"</p>
+          <h4><i class="fas fa-drone"></i> UAV Campaigns & Calibration</h4>
+          <p>
+            Planning and execution of <strong>UAV thermal and multispectral campaigns</strong>,
+            radiometric calibration (ThermiCAL), RTK workflows and integration with
+            field data and weather stations.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4><i class="fas fa-chalkboard-teacher"></i> Training & Workshops</h4>
+          <p>
+            Tailored courses on <strong>precision agriculture, remote sensing, GEE, Python</strong>
+            and UAV-based monitoring for universities, research centers and companies.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Technologies Section -->
-  <section class="tech-stack">
-    <h3>Technologies I Master</h3>
-    <div class="tech-grid">
-      <div class="tech-item">
-        <i class="fas fa-satellite fa-3x"></i>
-        <p>Satellite Analysis</p>
+  <!-- Consulting Packages Section -->
+  <section id="packages" class="section reveal">
+    <h2>Consulting Packages</h2>
+    <p class="section-intro">
+      I adapt each project to the client’s needs, but these packages provide a
+      first reference of how I usually work with organizations and research teams.
+    </p>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Remote Diagnostic</h3>
+        <p class="pricing-tag">Short-term support</p>
+        <ul>
+          <li>1 online meeting (up to 2 hours)</li>
+          <li>Review of current data and workflows</li>
+          <li>High-level recommendations for ET/CWSI or UAV usage</li>
+          <li>Summary report (PDF)</li>
+        </ul>
+        <a href="#contact" class="cta-button">Request this package</a>
       </div>
-      <div class="tech-item">
-        <i class="fas fa-helicopter fa-3x"></i>
-        <p>Drone Mapping</p>
+
+      <div class="pricing-card pricing-featured">
+        <h3>Implementation & Training</h3>
+        <p class="pricing-tag">Most requested</p>
+        <ul>
+          <li>Design of ET/CWSI or monitoring pipeline</li>
+          <li>Scripts in Google Earth Engine and/or Python</li>
+          <li>Online training session for your team</li>
+          <li>Technical report + documentation</li>
+        </ul>
+        <a href="#contact" class="cta-button">Start a project</a>
       </div>
-      <div class="tech-item">
-        <i class="fas fa-tint fa-3x"></i>
-        <p>Water Management</p>
+
+      <div class="pricing-card">
+        <h3>Research Partnership</h3>
+        <p class="pricing-tag">Long-term collaboration</p>
+        <ul>
+          <li>Support for research proposals & papers</li>
+          <li>Design of field campaigns (UAV + ground)</li>
+          <li>Co-development of models and analyses</li>
+          <li>Manuscript drafting & revision</li>
+        </ul>
+        <a href="#contact" class="cta-button">Discuss collaboration</a>
       </div>
-      <div class="tech-item">
-        <i class="fas fa-seedling fa-3x"></i>
-        <p>Crop Analysis</p>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research" class="section reveal">
+    <h2>Research Works</h2>
+    <p class="section-intro">
+      My consulting and advisory work is supported by peer-reviewed research in
+      <strong>Q1 international journals</strong>.
+    </p>
+    <div class="cards-container">
+      <div class="card" onclick="window.open('https://www.mdpi.com/2072-4292/17/4/632', '_blank')">
+        <div class="card-content">
+          <h4>Rice Yield Prediction with UAV Spectral & Textural Indices</h4>
+          <p>
+            Machine learning models using multispectral and textural features derived
+            from UAV imagery to predict rice yield in Lambayeque, Peru.
+          </p>
+        </div>
+      </div>
+      <div class="card" onclick="window.open('https://www.mdpi.com/2072-4292/16/20/3882', '_blank')">
+        <div class="card-content">
+          <h4>Water Use Efficiency under AWD with UAV & AquaCrop</h4>
+          <p>
+            Evaluation of water use efficiency in rice using alternative wetting and
+            drying (AWD), energy balance models, UAV thermal data and AquaCrop.
+          </p>
+        </div>
+      </div>
+      <div class="card" onclick="window.open('https://www.mdpi.com/2072-4292/16/5/796', '_blank')">
+        <div class="card-content">
+          <h4>CWSI & Stomatal Conductance with Thermal Sensors</h4>
+          <p>
+            Monitoring water stress under different irrigation regimes using thermal
+            imagery and stomatal conductance measurements on the northern coast of Peru.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Case Studies Section -->
-  <section id="cases">
-    <h3>Case Studies</h3>
+  <section id="cases" class="section reveal">
+    <h2>Case Studies</h2>
     <div class="cards-container">
       <div class="case-study">
-        <img src="campo-antess.jpg" alt="Field before intervention">
+        <img src="assets/images/campo-antess.jpg" alt="Rice field before intervention">
         <div class="case-study-overlay">
-          <h4>40% Increase in Rice Productivity</h4>
-          <p>Optimized irrigation techniques through multispectral analysis</p>
-          <a href="#" class="cta-small">View Full Study</a>
+          <h4>Rice Schemes in Lambayeque, Peru</h4>
+          <p>
+            Integration of Sentinel-2, UAV thermal imagery and AquaCrop to support
+            irrigation scheduling and identify zones of water stress.
+          </p>
+          <a href="#contact" class="cta-small">Discuss a similar project</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Professional Timeline Section -->
-  <section id="timeline">
-    <h3>Professional Timeline</h3>
+  <section id="timeline" class="section reveal">
+    <h2>Professional Timeline</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <h4>2023 - Present</h4>
-        <p>Precision Agriculture Research - National University</p>
+        <h4>2024 – Present</h4>
+        <p>
+          MSc Thesis – Monitoring CWSI in rice fields in Lambayeque using
+          satellite imagery (GEE) calibrated with thermal UAV data.
+        </p>
       </div>
       <div class="timeline-item">
-        <h4>2021-2023</h4>
-        <p>Implementation of Smart Irrigation Systems - Regional Projects</p>
+        <h4>2023 – 2024</h4>
+        <p>
+          Research assistant in PROCIENCIA projects on precision agriculture, GEI reduction,
+          and water productivity in rice systems.
+        </p>
+      </div>
+      <div class="timeline-item">
+        <h4>2021 – 2023</h4>
+        <p>
+          Implementation of smart irrigation and UAV-based monitoring for smallholder
+          rice producers on the northern coast of Peru.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Map Section -->
-  <section id="mapSection">
-    <h3>Work Locations</h3>
-    <iframe id="mapFrame" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
-  <!-- Blog Section -->
-  <section id="blog">
-    <h3>Latest Posts</h3>
-    <div class="blog-posts">
-      <div class="blog-post">
-        <h4>Innovations in Precision Agriculture</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac metus id dui luctus feugiat...</p>
-        <a href="#">Read more</a>
-      </div>
-      <div class="blog-post">
-        <h4>Sustainable Water Resource Management</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac metus id dui luctus feugiat...</p>
-        <a href="#">Read more</a>
-      </div>
+  <section id="mapSection" class="section reveal">
+    <h2>Where I Work</h2>
+    <p class="section-intro">
+      Most of my field work and consulting projects are located in
+      <strong>Lambayeque</strong>, <strong>Tacna</strong> and other regions of Peru,
+      with potential for remote collaboration across Latin America.
+    </p>
+    <div class="map-wrapper">
+      <iframe
+        id="mapFrame"
+        width="600"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
     </div>
   </section>
 
   <!-- GitHub Projects Section -->
-  <section id="projects">
-    <h3>GitHub Projects</h3>
+  <section id="projects" class="section reveal">
+    <h2>Selected GitHub Projects</h2>
+    <p class="section-intro">
+      Open-source tools and workflows that I use in consulting and research.
+    </p>
     <div class="projects">
-      <div class="project-card" onclick="window.open('https://github.com/JLHM1998/project1', '_blank')">
-        <h4>Project 1</h4>
-        <p>Brief project description.</p>
+      <div class="project-card" onclick="window.open('https://github.com/JLHM1998', '_blank')">
+        <h4>GEE & Python Workflows</h4>
+        <p>
+          Scripts for vegetation indices, CWSI, ET estimation and multitemporal analysis
+          with Sentinel-2 and Landsat 8/9.
+        </p>
       </div>
-      <div class="project-card" onclick="window.open('https://github.com/JLHM1998/project2', '_blank')">
-        <h4>Project 2</h4>
-        <p>Brief project description.</p>
+      <div class="project-card" onclick="window.open('https://github.com/JLHM1998', '_blank')">
+        <h4>UAV Thermal & Multispectral Processing</h4>
+        <p>
+          Notebooks and pipelines for thermal calibration, mosaicking and integration
+          with ground and meteorological data.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section id="testimonials">
-    <h3>Testimonials</h3>
+  <section id="testimonials" class="section reveal">
+    <h2>Testimonials</h2>
     <div class="testimonials">
       <div class="testimonial">
-        <p>"José is a visionary in precision agriculture. His research has significantly impacted our field."</p>
-        <strong>- Colleague A</strong>
+        <p>
+          "José combines deep knowledge in water resources with practical experience in
+          UAV and satellite applications. His support has been key to strengthening
+          our research on precision agriculture."
+        </p>
+        <strong>- Research collaborator</strong>
       </div>
       <div class="testimonial">
-        <p>"A true innovator, José combines passion and technical expertise in every project."</p>
-        <strong>- Colleague B</strong>
+        <p>
+          "His capacity to translate complex remote sensing workflows into concrete
+          recommendations for irrigation management is outstanding."
+        </p>
+        <strong>- Project coordinator</strong>
       </div>
     </div>
   </section>
 
   <!-- GitHub Stats Section -->
-  <section id="githubStats" style="text-align:center; padding:40px 20px;">
-    <h3>GitHub Stats</h3>
-    <img src="https://github-readme-stats.vercel.app/api?username=JLHM1998&show_icons=true&count_private=true" alt="GitHub Stats of JLHM1998" />
+  <section id="githubStats" class="section github-stats reveal">
+    <h2>GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=JLHM1998&show_icons=true&count_private=true"
+         alt="GitHub Stats of JLHM1998" />
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h3>Ready to Optimize Your Production?</h3>
+  <section id="contact" class="section reveal">
+    <h2>Work With Me</h2>
+    <p class="section-intro">
+      If you need support for a project in <strong>remote sensing, CWSI, ET modeling,
+      UAV campaigns or precision agriculture</strong>, feel free to reach out.
+    </p>
     <div class="contact-form">
       <form>
         <div class="form-group">
-          <input type="text" placeholder="Name" required>
+          <input type="text" placeholder="Name / Organization" required>
         </div>
         <div class="form-group">
           <input type="email" placeholder="Email" required>
         </div>
         <div class="form-group">
-          <textarea placeholder="Describe your project" rows="5" required></textarea>
+          <textarea placeholder="Briefly describe your project or consulting needs"
+                    rows="5" required></textarea>
         </div>
         <button type="submit">Send Inquiry</button>
       </form>
@@ -186,13 +343,25 @@
         <h4>Direct Contact</h4>
         <p><i class="fas fa-phone"></i> +51 999201164</p>
         <p><i class="fas fa-envelope"></i> joluhumu98@gmail.com</p>
-        <p><i class="fas fa-map-marker"></i> La Molina, Lima-Peru</p>
+        <p><i class="fas fa-map-marker-alt"></i> La Molina, Lima – Peru</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/jlhm98/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/JLHM1998" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- External Scripts -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>© <span id="year"></span> José Luis Huanuqueño Murillo · Remote Sensing & Precision Agriculture Consulting</p>
+  </footer>
+
+  <!-- Scripts -->
   <script src="assets/scripts/scripts.js"></script>
 </body>
 </html>

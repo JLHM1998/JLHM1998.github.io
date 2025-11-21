@@ -1,118 +1,515 @@
 /* 
-  This file contains the CSS styles for the website, defining the layout and appearance of the elements.
+  Global styles & layout for José L.H. consulting website
 */
 
-/* General Styles */
+/* ------------------------------
+   Global & Typography
+------------------------------ */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background: #fafafa;
+    color: #222;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4 {
     margin: 0;
-    padding: 0;
+    font-weight: 700;
 }
 
-/* Hero Section */
-.hero-section {
-    background: #f4f4f4;
+.section {
+    padding: 60px 20px;
     text-align: center;
-    padding: 50px 20px;
 }
 
-.hero-section h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1em;
 }
 
-.hero-section .subtitle {
+/* ------------------------------
+   Navigation Bar
+------------------------------ */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.logo-mark {
+    background: #007BFF;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.logo-text {
+    font-size: 0.95em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #007BFF;
+}
+
+#toggleDark {
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+/* ------------------------------
+   Hero Section
+------------------------------ */
+.hero-section {
+    padding: 80px 20px;
+    background: #f4f4f4;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 2.4em;
+    margin-bottom: 15px;
+}
+
+.subtitle {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
 .cta-button {
     background: #007BFF;
+    padding: 12px 25px;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
 }
 
-/* Research Section */
-#research {
-    padding: 40px 20px;
-    background: #fff;
+.cta-button:hover {
+    background: #005fcc;
 }
 
+.cta-secondary {
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #ddd;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.hero-badges {
+    margin-top: 10px;
+}
+
+.badge {
+    background: #007BFF;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+/* ------------------------------
+   Cards
+------------------------------ */
 .cards-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
 .card {
+    width: 320px;
     background: #e9ecef;
-    border-radius: 5px;
-    margin: 10px;
+    border-radius: 8px;
     padding: 20px;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: 0.25s;
+    text-align: left;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    background: #dfe6eb;
 }
 
-/* Technologies Section */
-.tech-stack {
-    padding: 40px 20px;
-    background: #f4f4f4;
+/* ------------------------------
+   Case Studies 
+------------------------------ */
+.case-study {
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-.tech-grid {
+.case-study img {
+    width: 100%;
+    display: block;
+}
+
+.case-study-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    opacity: 0;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    transition: 0.3s;
 }
 
-.tech-item {
-    text-align: center;
-    margin: 20px;
+.case-study:hover .case-study-overlay {
+    opacity: 1;
 }
 
-/* Timeline Section */
+.cta-small {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   Timeline
+------------------------------ */
 .timeline {
-    padding: 40px 20px;
-    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .timeline-item {
-    margin: 20px 0;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #007BFF;
+    background: #f4f6f8;
+    border-radius: 6px;
 }
 
-/* Contact Form */
+/* ------------------------------
+   Projects
+------------------------------ */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.project-card {
+    width: 300px;
+    padding: 25px;
+    background: #e9ecef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+    text-align: left;
+}
+
+.project-card:hover {
+    background: #d6dee4;
+    transform: translateY(-5px);
+}
+
+/* ------------------------------
+   Testimonials
+------------------------------ */
+.testimonials {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background: #f4f6f8;
+    padding: 25px;
+    border-left: 4px solid #007BFF;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* ------------------------------
+   Map
+------------------------------ */
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#mapFrame {
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+
+/* ------------------------------
+   Contact Form
+------------------------------ */
 .contact-form {
-    padding: 40px 20px;
-    background: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+form {
+    width: 350px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 input, textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1em;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #005fcc;
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 350px;
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 6px;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* ------------------------------
+   GitHub Stats
+------------------------------ */
+.github-stats img {
+    max-width: 420px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* ------------------------------
+   Consulting Packages
+------------------------------ */
+.pricing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.pricing-card {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px 20px 30px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.pricing-card h3 {
+    margin-bottom: 5px;
+}
+
+.pricing-tag {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card li {
+    margin-bottom: 8px;
+}
+
+.pricing-featured {
+    border: 2px solid #007BFF;
+    transform: translateY(-5px);
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+.main-footer {
     background: #007BFF;
     color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ------------------------------
+   Dark Mode
+------------------------------ */
+body.dark-mode {
+    background: #121212;
+    color: #e4e4e4;
+}
+
+body.dark-mode .main-nav {
+    background: #1e1e1e;
+}
+
+body.dark-mode .card,
+body.dark-mode .project-card,
+body.dark-mode .testimonial,
+body.dark-mode .timeline-item,
+body.dark-mode .pricing-card {
+    background: #222;
+    border-left-color: #4aa3ff;
+    color: #e4e4e4;
+    box-shadow: none;
+}
+
+body.dark-mode .cta-button {
+    background: #4aa3ff;
+}
+
+body.dark-mode .hero-section {
+    background: #1a1a1a;
+}
+
+body.dark-mode .section {
+    background: #121212;
+}
+
+body.dark-mode .main-footer {
+    background: #005fcc;
+}
+
+body.dark-mode .case-study-overlay {
+    background: rgba(0,0,0,0.75);
+}
+
+/* ------------------------------
+   Animations
+------------------------------ */
+
+/* Scroll reveal base */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Drone floating animation */
+.drone-animation {
+    animation: floatDrone 4s ease-in-out infinite;
+}
+
+@keyframes floatDrone {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* ------------------------------
+   Responsive
+------------------------------ */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: none; /* simple version; puedes luego hacer menú móvil si quieres */
+    }
 }
