@@ -34,8 +34,8 @@
         <div class="nav-logo">
           <div class="logo-mark">JHM</div>
           <div class="logo-text">
-            <span data-i18n="nav_brand_tagline">Remote sensing</span>
-            <span data-i18n="nav_brand_title">Precision Agriculture & Water Resources</span>
+            <span data-i18n="nav_brand_top">REMOTE SENSING</span>
+            <span data-i18n="nav_brand_bottom">Precision Agriculture & Water Resources</span>
           </div>
         </div>
 
@@ -44,20 +44,19 @@
           <li><a href="#services" data-i18n="nav_services">Services</a></li>
           <li><a href="#packages" data-i18n="nav_packages">Packages</a></li>
           <li><a href="#research" data-i18n="nav_research">Research</a></li>
+          <li><a href="#publications" data-i18n="nav_publications">Publications</a></li>
           <li><a href="#cases" data-i18n="nav_cases">Case Studies</a></li>
           <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
           <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
 
         <div class="nav-actions">
-          <!-- Language toggle -->
-          <div class="lang-toggle">
+          <div class="lang-toggle" aria-label="Language toggle">
             <button class="lang-option active" data-lang="en">EN</button>
             <span class="lang-separator">|</span>
             <button class="lang-option" data-lang="es">ES</button>
           </div>
 
-          <!-- Mobile menu -->
           <button
             class="nav-toggle"
             id="navToggle"
@@ -66,7 +65,6 @@
             <i class="fas fa-bars"></i>
           </button>
 
-          <!-- Dark mode -->
           <button
             class="toggle-dark"
             id="toggleDark"
@@ -85,14 +83,13 @@
           <div class="hero-pill">
             <span><i class="fas fa-seedling"></i></span>
             <span data-i18n="hero_pill">
-              Precision agriculture · Remote sensing · ET & CWSI
+              Precision agriculture · Remote sensing · ET &amp; CWSI
             </span>
           </div>
 
           <h1 class="hero-title" data-i18n="hero_title">
-            Precision Agriculture & Remote Sensing Consulting
+            Precision Agriculture &amp; Remote Sensing Consulting
           </h1>
-
           <p class="hero-subtitle" data-i18n="hero_subtitle">
             I help agricultural projects and institutions use
             <strong>satellites, UAVs and evapotranspiration models</strong> to
@@ -101,13 +98,13 @@
           </p>
 
           <div class="hero-cta-row">
-            <a href="#contact" class="btn-primary" data-i18n="hero_cta_primary">
+            <a href="#contact" class="btn-primary">
               <i class="fas fa-calendar-check"></i>
-              Request a consultation
+              <span data-i18n="hero_cta_primary">Request a consultation</span>
             </a>
-            <a href="#services" class="btn-secondary" data-i18n="hero_cta_secondary">
+            <a href="#services" class="btn-secondary">
               <i class="fas fa-layer-group"></i>
-              View services
+              <span data-i18n="hero_cta_secondary">View services</span>
             </a>
           </div>
 
@@ -121,17 +118,17 @@
           </div>
 
           <div class="hero-badges">
-            <span class="badge" data-i18n="badge_msc">
+            <span class="badge">
               <i class="fas fa-graduation-cap"></i>
-              MSc Water Resources – UNALM
+              <span data-i18n="hero_badge_msc">MSc Water Resources – UNALM</span>
             </span>
-            <span class="badge" data-i18n="badge_uav">
+            <span class="badge">
               <i class="fas fa-drone"></i>
-              Certified UAV Pilot (DGAC – Peru)
+              <span data-i18n="hero_badge_uav">Certified UAV Pilot (DGAC – Peru)</span>
             </span>
-            <span class="badge" data-i18n="badge_models">
+            <span class="badge">
               <i class="fas fa-circle-nodes"></i>
-              METRIC · TSEB · AquaCrop · GEE · Python
+              <span data-i18n="hero_badge_models">METRIC · TSEB · AquaCrop · GEE · Python</span>
             </span>
           </div>
         </div>
@@ -139,12 +136,13 @@
         <div class="hero-visual">
           <div class="hero-card">
             <div class="hero-card-header">
-              <span data-i18n="hero_card_location">
+              <span>
                 <i class="fas fa-location-dot"></i>
-                Rice, olive & avocado fields – Peru
+                <span data-i18n="hero_card_location">Rice, olive &amp; avocado fields – Peru</span>
               </span>
-              <span data-i18n="hero_card_tag">
-                <i class="fas fa-satellite-dish"></i> UAV + satellites
+              <span>
+                <i class="fas fa-satellite-dish"></i>
+                <span data-i18n="hero_card_mode">UAV + satellites</span>
               </span>
             </div>
             <div class="hero-drone">
@@ -154,24 +152,22 @@
                 class="drone-animation"
               />
               <div class="hero-floating-tag">
-                <span data-i18n="hero_floating_line1">CWSI & ET monitoring</span>
-                <strong data-i18n="hero_floating_line2">
-                  Lambayeque · Tacna · Coastal Peru
-                </strong>
+                <span data-i18n="hero_floating_line1">CWSI &amp; ET monitoring</span>
+                <strong data-i18n="hero_floating_line2">Lambayeque · Tacna · Coastal Peru</strong>
               </div>
             </div>
             <div class="hero-chip-row">
-              <span class="hero-chip" data-i18n="chip_thermal">
+              <span class="hero-chip">
                 <i class="fas fa-temperature-high"></i>
-                UAV & satellite thermal calibration
+                <span data-i18n="hero_chip1">UAV &amp; satellite thermal calibration</span>
               </span>
-              <span class="hero-chip" data-i18n="chip_et">
+              <span class="hero-chip">
                 <i class="fas fa-water"></i>
-                ETa/ETc from METRIC, AquaCrop & FAO-56
+                <span data-i18n="hero_chip2">ETa/ETc from METRIC, AquaCrop &amp; FAO-56</span>
               </span>
-              <span class="hero-chip" data-i18n="chip_yield">
+              <span class="hero-chip">
                 <i class="fas fa-chart-line"></i>
-                Yield modeling & water productivity
+                <span data-i18n="hero_chip3">Yield modeling &amp; water productivity</span>
               </span>
             </div>
           </div>
@@ -202,8 +198,8 @@
             <div class="card-icon">
               <i class="fas fa-water"></i>
             </div>
-            <h4 data-i18n="services_card1_title">ET & CWSI Modeling</h4>
-            <p data-i18n="services_card1_text">
+            <h4 data-i18n="services_1_title">ET &amp; CWSI Modeling</h4>
+            <p data-i18n="services_1_desc">
               Design and implementation of workflows for
               <strong>actual and crop evapotranspiration (ETa/ETc)</strong> and
               <strong>Crop Water Stress Index (CWSI)</strong> using METRIC, TSEB,
@@ -215,8 +211,8 @@
             <div class="card-icon">
               <i class="fas fa-satellite"></i>
             </div>
-            <h4 data-i18n="services_card2_title">Remote Sensing Pipelines</h4>
-            <p data-i18n="services_card2_text">
+            <h4 data-i18n="services_2_title">Remote Sensing Pipelines</h4>
+            <p data-i18n="services_2_desc">
               Development of <strong>Google Earth Engine</strong> scripts and
               Python workflows for multitemporal analysis with Sentinel-2 and
               Landsat 8/9: vegetation indices, texture metrics, land use and crop
@@ -228,8 +224,8 @@
             <div class="card-icon">
               <i class="fas fa-helicopter-symbol"></i>
             </div>
-            <h4 data-i18n="services_card3_title">UAV Campaigns & Calibration</h4>
-            <p data-i18n="services_card3_text">
+            <h4 data-i18n="services_3_title">UAV Campaigns &amp; Calibration</h4>
+            <p data-i18n="services_3_desc">
               Planning and execution of
               <strong>UAV thermal and multispectral campaigns</strong>,
               radiometric calibration (ThermiCAL), RTK workflows and integration
@@ -241,8 +237,8 @@
             <div class="card-icon">
               <i class="fas fa-chalkboard-teacher"></i>
             </div>
-            <h4 data-i18n="services_card4_title">Training & Workshops</h4>
-            <p data-i18n="services_card4_text">
+            <h4 data-i18n="services_4_title">Training &amp; Workshops</h4>
+            <p data-i18n="services_4_desc">
               Tailored courses on
               <strong>precision agriculture, remote sensing, GEE, Python</strong>
               and UAV-based monitoring for universities, research centers and
@@ -273,67 +269,67 @@
 
         <div class="pricing-grid">
           <article class="pricing-card">
-            <h3 data-i18n="package1_title">Remote Diagnostic</h3>
-            <p class="pricing-tag" data-i18n="package1_tag">Short-term support</p>
+            <h3 data-i18n="package_1_title">Remote Diagnostic</h3>
+            <p class="pricing-tag" data-i18n="package_1_tag">Short-term support</p>
             <ul>
-              <li data-i18n="package1_item1">1 online meeting (up to 2 hours)</li>
-              <li data-i18n="package1_item2">Review of current data and workflows</li>
-              <li data-i18n="package1_item3">
+              <li data-i18n="package_1_li1">1 online meeting (up to 2 hours)</li>
+              <li data-i18n="package_1_li2">Review of current data and workflows</li>
+              <li data-i18n="package_1_li3">
                 High-level recommendations for ET/CWSI or UAV usage
               </li>
-              <li data-i18n="package1_item4">
+              <li data-i18n="package_1_li4">
                 Summary report (PDF) with clear next steps
               </li>
             </ul>
-            <a href="#contact" class="btn-secondary" data-i18n="package1_cta">
+            <a href="#contact" class="btn-secondary">
               <i class="fas fa-paper-plane"></i>
-              Request this package
+              <span data-i18n="package_1_button">Request this package</span>
             </a>
           </article>
 
           <article class="pricing-card pricing-featured">
-            <h3 data-i18n="package2_title">Implementation & Training</h3>
-            <p class="pricing-tag" data-i18n="package2_tag">Most requested</p>
+            <h3 data-i18n="package_2_title">Implementation &amp; Training</h3>
+            <p class="pricing-tag" data-i18n="package_2_tag">Most requested</p>
             <ul>
-              <li data-i18n="package2_item1">
+              <li data-i18n="package_2_li1">
                 Design of a custom ET/CWSI or monitoring pipeline
               </li>
-              <li data-i18n="package2_item2">
+              <li data-i18n="package_2_li2">
                 Production-ready scripts in GEE and/or Python
               </li>
-              <li data-i18n="package2_item3">
+              <li data-i18n="package_2_li3">
                 Online training session for your technical team
               </li>
-              <li data-i18n="package2_item4">
+              <li data-i18n="package_2_li4">
                 Technical report and documentation of all workflows
               </li>
             </ul>
-            <a href="#contact" class="btn-primary" data-i18n="package2_cta">
+            <a href="#contact" class="btn-primary">
               <i class="fas fa-rocket"></i>
-              Start a project
+              <span data-i18n="package_2_button">Start a project</span>
             </a>
           </article>
 
           <article class="pricing-card">
-            <h3 data-i18n="package3_title">Research Partnership</h3>
-            <p class="pricing-tag" data-i18n="package3_tag">Long-term collaboration</p>
+            <h3 data-i18n="package_3_title">Research Partnership</h3>
+            <p class="pricing-tag" data-i18n="package_3_tag">Long-term collaboration</p>
             <ul>
-              <li data-i18n="package3_item1">
-                Support for research proposals & peer-reviewed papers
+              <li data-i18n="package_3_li1">
+                Support for research proposals &amp; peer-reviewed papers
               </li>
-              <li data-i18n="package3_item2">
+              <li data-i18n="package_3_li2">
                 Design of field campaigns (UAV + ground measurements)
               </li>
-              <li data-i18n="package3_item3">
+              <li data-i18n="package_3_li3">
                 Co-development of models and advanced analyses
               </li>
-              <li data-i18n="package3_item4">
+              <li data-i18n="package_3_li4">
                 Manuscript drafting, revision and response to reviewers
               </li>
             </ul>
-            <a href="#contact" class="btn-secondary" data-i18n="package3_cta">
+            <a href="#contact" class="btn-secondary">
               <i class="fas fa-handshake"></i>
-              Discuss collaboration
+              <span data-i18n="package_3_button">Discuss collaboration</span>
             </a>
           </article>
         </div>
@@ -372,10 +368,10 @@
             <div class="card-icon">
               <i class="fas fa-seedling"></i>
             </div>
-            <h4 data-i18n="research_card1_title">
-              Rice Yield Prediction with UAV Spectral & Textural Indices
+            <h4 data-i18n="research_1_title">
+              Rice Yield Prediction with UAV Spectral &amp; Textural Indices
             </h4>
-            <p data-i18n="research_card1_text">
+            <p data-i18n="research_1_desc">
               Machine learning models using multispectral and textural features
               derived from UAV imagery to predict rice yield in Lambayeque,
               Peru, integrating structural and radiometric information.
@@ -389,10 +385,10 @@
             <div class="card-icon">
               <i class="fas fa-droplet"></i>
             </div>
-            <h4 data-i18n="research_card2_title">
-              Water Use Efficiency under AWD with UAV & AquaCrop
+            <h4 data-i18n="research_2_title">
+              Water Use Efficiency under AWD with UAV &amp; AquaCrop
             </h4>
-            <p data-i18n="research_card2_text">
+            <p data-i18n="research_2_desc">
               Evaluation of water use efficiency in rice using alternate wetting
               and drying (AWD), energy balance models, UAV thermal data and a
               calibrated AquaCrop model under Peruvian coastal conditions.
@@ -406,16 +402,108 @@
             <div class="card-icon">
               <i class="fas fa-leaf"></i>
             </div>
-            <h4 data-i18n="research_card3_title">
-              CWSI & Stomatal Conductance with Thermal Sensors
+            <h4 data-i18n="research_3_title">
+              CWSI &amp; Stomatal Conductance with Thermal Sensors
             </h4>
-            <p data-i18n="research_card3_text">
+            <p data-i18n="research_3_desc">
               Monitoring crop water stress under different irrigation regimes
               using thermal imagery, stomatal conductance measurements and CWSI
               in rice fields on the northern coast of Peru.
             </p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <i class="fas fa-book-open"></i>
+            <span data-i18n="pubs_label">Q1 Publications</span>
+          </div>
+          <h2 class="section-title" data-i18n="pubs_title">
+            Peer-reviewed journal articles
+          </h2>
+          <p class="section-intro" data-i18n="pubs_intro">
+            A selection of recent papers published in Q1 journals, focused on
+            evapotranspiration (ET), crop water stress (CWSI), UAV-based monitoring
+            and precision agriculture in Peruvian irrigated systems.
+          </p>
+        </div>
+
+        <div class="research-grid publications-grid">
+          <article class="card publication-card"
+                   onclick="window.open('https://www.mdpi.com/2072-4292/17/4/632', '_blank')">
+            <div class="card-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h4 data-i18n="pubs_1_title">
+              Rice Yield Prediction with UAV Spectral &amp; Textural Indices
+            </h4>
+            <p class="pub-meta" data-i18n="pubs_1_meta">
+              Remote Sensing (Q1, MDPI) · 2025 · DOI: 10.3390/rs17040632
+            </p>
+            <p class="pub-desc" data-i18n="pubs_1_desc">
+              Machine-learning models combining multispectral and textural metrics from
+              UAV imagery to estimate rice yield in coastal Peru.
+            </p>
+            <div class="pub-tags">
+              <span class="pub-tag">UAV</span>
+              <span class="pub-tag">Yield modeling</span>
+              <span class="pub-tag">Texture indices</span>
+            </div>
+          </article>
+
+          <article class="card publication-card"
+                   onclick="window.open('https://www.mdpi.com/2072-4292/16/20/3882', '_blank')">
+            <div class="card-icon">
+              <i class="fas fa-droplet"></i>
+            </div>
+            <h4 data-i18n="pubs_2_title">
+              Water Use Efficiency under AWD with UAV &amp; AquaCrop
+            </h4>
+            <p class="pub-meta" data-i18n="pubs_2_meta">
+              Remote Sensing (Q1, MDPI) · 2024 · DOI: 10.3390/rs16203882
+            </p>
+            <p class="pub-desc" data-i18n="pubs_2_desc">
+              Assessment of water use efficiency in rice using alternate wetting
+              and drying (AWD), UAV thermal data and AquaCrop simulations.
+            </p>
+            <div class="pub-tags">
+              <span class="pub-tag">AWD</span>
+              <span class="pub-tag">AquaCrop</span>
+              <span class="pub-tag">ET &amp; WUE</span>
+            </div>
+          </article>
+
+          <article class="card publication-card"
+                   onclick="window.open('https://www.mdpi.com/2072-4292/16/5/796', '_blank')">
+            <div class="card-icon">
+              <i class="fas fa-thermometer-half"></i>
+            </div>
+            <h4 data-i18n="pubs_3_title">
+              Crop Water Stress Index &amp; Stomatal Conductance from Thermal Sensors
+            </h4>
+            <p class="pub-meta" data-i18n="pubs_3_meta">
+              Remote Sensing (Q1, MDPI) · 2024 · DOI: 10.3390/rs16050796
+            </p>
+            <p class="pub-desc" data-i18n="pubs_3_desc">
+              Evaluation of CWSI and stomatal conductance under different irrigation
+              regimes using fixed and UAV-mounted thermal sensors in rice.
+            </p>
+            <div class="pub-tags">
+              <span class="pub-tag">CWSI</span>
+              <span class="pub-tag">Thermal sensors</span>
+              <span class="pub-tag">Irrigation</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="pricing-footer-note" data-i18n="pubs_footer">
+          Full publication list available on request (CV / Google Scholar / ORCID).
+        </p>
       </div>
     </section>
 
@@ -444,16 +532,14 @@
               alt="Rice field in Lambayeque, Peru"
             />
             <div class="case-study-overlay">
-              <h4 data-i18n="cases_card1_title">
-                Rice schemes in Lambayeque, Peru
-              </h4>
-              <p data-i18n="cases_card1_text">
+              <h4 data-i18n="case_1_title">Rice schemes in Lambayeque, Peru</h4>
+              <p data-i18n="case_1_desc">
                 Integration of Sentinel-2, UAV thermal imagery and AquaCrop to
                 support irrigation scheduling, identify zones of water stress
                 and quantify water productivity at field scale.
               </p>
-              <a href="#contact" class="cta-small" data-i18n="cases_card1_cta">
-                <span>Discuss a similar project</span>
+              <a href="#contact" class="cta-small">
+                <span data-i18n="case_1_cta">Discuss a similar project</span>
                 <i class="fas fa-arrow-right"></i>
               </a>
             </div>
@@ -482,24 +568,24 @@
 
         <div class="timeline">
           <div class="timeline-item">
-            <h4>2024 – Present</h4>
-            <p data-i18n="timeline_item1">
+            <h4 data-i18n="timeline_1_title">2024 – Present</h4>
+            <p data-i18n="timeline_1_desc">
               MSc Thesis – Monitoring CWSI in rice fields in Lambayeque using
               satellite imagery in Google Earth Engine, calibrated with thermal
               UAV data and in-situ measurements.
             </p>
           </div>
           <div class="timeline-item">
-            <h4>2023 – 2024</h4>
-            <p data-i18n="timeline_item2">
+            <h4 data-i18n="timeline_2_title">2023 – 2024</h4>
+            <p data-i18n="timeline_2_desc">
               Research assistant in PROCIENCIA projects on precision
               agriculture, greenhouse gas (GHG) reduction and water
               productivity in irrigated rice systems.
             </p>
           </div>
           <div class="timeline-item">
-            <h4>2021 – 2023</h4>
-            <p data-i18n="timeline_item3">
+            <h4 data-i18n="timeline_3_title">2021 – 2023</h4>
+            <p data-i18n="timeline_3_desc">
               Implementation of smart irrigation and UAV-based monitoring for
               smallholder rice producers on the northern coast of Peru,
               combining field data, satellite imagery and agronomic knowledge.
@@ -518,7 +604,7 @@
             <span data-i18n="map_label">Where I work</span>
           </div>
           <h2 class="section-title" data-i18n="map_title">
-            Field sites & collaborations
+            Field sites &amp; collaborations
           </h2>
           <p class="section-intro" data-i18n="map_intro">
             Most of my field work and consulting projects are located in
@@ -547,7 +633,7 @@
             <span data-i18n="projects_label">GitHub projects</span>
           </div>
           <h2 class="section-title" data-i18n="projects_title">
-            Open-source tools & workflows
+            Open-source tools &amp; workflows
           </h2>
           <p class="section-intro" data-i18n="projects_intro">
             A selection of open-source tools that I maintain and use in
@@ -561,8 +647,8 @@
             class="project-card"
             onclick="window.open('https://github.com/JHM1998', '_blank')"
           >
-            <h4 data-i18n="projects_card1_title">GEE & Python Workflows</h4>
-            <p data-i18n="projects_card1_text">
+            <h4 data-i18n="project_1_title">GEE &amp; Python Workflows</h4>
+            <p data-i18n="project_1_desc">
               Scripts for vegetation indices, CWSI, ET estimation and
               multitemporal analysis with Sentinel-2 and Landsat 8/9, focused on
               irrigated agriculture in Peru.
@@ -573,10 +659,10 @@
             class="project-card"
             onclick="window.open('https://github.com/JHM1998', '_blank')"
           >
-            <h4 data-i18n="projects_card2_title">
-              UAV Thermal & Multispectral Processing
+            <h4 data-i18n="project_2_title">
+              UAV Thermal &amp; Multispectral Processing
             </h4>
-            <p data-i18n="projects_card2_text">
+            <p data-i18n="project_2_desc">
               Notebooks and pipelines for thermal calibration, mosaicking and
               integration of UAV imagery with ground measurements and
               meteorological data.
@@ -601,22 +687,22 @@
 
         <div class="testimonials-wrapper">
           <article class="testimonial">
-            <p data-i18n="testimonial1_text">
+            <p data-i18n="testimonial_1_text">
               "José combines deep knowledge in water resources with practical
               experience in UAV and satellite applications. His support has been
               key to strengthening our research on precision agriculture."
             </p>
-            <strong data-i18n="testimonial1_author">
+            <strong data-i18n="testimonial_1_author">
               – Research collaborator
             </strong>
           </article>
           <article class="testimonial">
-            <p data-i18n="testimonial2_text">
+            <p data-i18n="testimonial_2_text">
               "His capacity to translate complex remote sensing workflows into
               concrete recommendations for irrigation management is outstanding.
               Clear, rigorous and highly applied."
             </p>
-            <strong data-i18n="testimonial2_author">
+            <strong data-i18n="testimonial_2_author">
               – Project coordinator
             </strong>
           </article>
@@ -630,12 +716,12 @@
         <div class="section-header">
           <div class="section-label">
             <i class="fas fa-code-branch"></i>
-            <span data-i18n="github_label">GitHub activity</span>
+            <span data-i18n="ghstats_label">GitHub activity</span>
           </div>
-          <h2 class="section-title" data-i18n="github_title">
+          <h2 class="section-title" data-i18n="ghstats_title">
             Code behind the projects
           </h2>
-          <p class="section-intro" data-i18n="github_intro">
+          <p class="section-intro" data-i18n="ghstats_intro">
             I maintain active repositories with examples, utilities and
             reproducible workflows for ET, CWSI and UAV-based agronomic
             monitoring.
@@ -671,7 +757,7 @@
         <div class="contact-grid">
           <div class="contact-card">
             <h3 data-i18n="contact_form_title">Tell me about your project</h3>
-            <p class="small" data-i18n="contact_form_subtitle">
+            <p class="small" data-i18n="contact_form_intro">
               Share a few details and I will reply with a short diagnosis and
               possible ways to collaborate.
             </p>
@@ -684,7 +770,6 @@
                     id="name"
                     placeholder="Name / Organization"
                     required
-                    data-i18n-placeholder="contact_placeholder_name"
                   />
                 </div>
                 <div class="form-group">
@@ -693,7 +778,6 @@
                     id="email"
                     placeholder="Email"
                     required
-                    data-i18n-placeholder="contact_placeholder_email"
                   />
                 </div>
               </div>
@@ -702,7 +786,6 @@
                   type="text"
                   id="topic"
                   placeholder="Project topic (e.g. CWSI, ET, UAV, training)"
-                  data-i18n-placeholder="contact_placeholder_topic"
                 />
               </div>
               <div class="form-group">
@@ -711,17 +794,15 @@
                   rows="5"
                   placeholder="Briefly describe your project, current data (UAV / satellite / field) and expected outcomes."
                   required
-                  data-i18n-placeholder="contact_placeholder_message"
                 ></textarea>
               </div>
               <button
                 type="submit"
                 class="btn-primary"
                 style="width: 100%; justify-content: center;"
-                data-i18n="contact_button"
               >
                 <i class="fas fa-paper-plane"></i>
-                Send inquiry
+                <span data-i18n="contact_button">Send inquiry</span>
               </button>
             </form>
           </div>
@@ -766,17 +847,15 @@
       <div class="container">
         <p>
           © <span id="year"></span>
-          <span>José Luis Huanuqueño Murillo</span>
-          ·
+          <span>José Luis Huanuqueño Murillo</span> ·
           <span data-i18n="footer_text">
-            Remote Sensing & Precision Agriculture Consulting
+            Remote Sensing &amp; Precision Agriculture Consulting
           </span>
         </p>
       </div>
     </footer>
   </div>
 
-  <!-- Scripts -->
-  <script src="assets/scripts/scripts.js" defer></script>
+  <script src="assets/scripts/scripts.js"></script>
 </body>
 </html>

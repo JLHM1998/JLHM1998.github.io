@@ -835,6 +835,46 @@ a {
   font-size: 0.9rem;
 }
 
+/* Publications */
+
+.publications-grid {
+  /* reuse research-grid */
+}
+
+.publication-card {
+  cursor: pointer;
+}
+
+.publication-card:hover {
+  transform: translateY(-6px);
+}
+
+.pub-meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.pub-desc {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.pub-tag {
+  font-size: 0.7rem;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: rgba(248, 250, 252, 0.9);
+}
+
 /* Timeline */
 
 .timeline-wrapper {
@@ -1140,19 +1180,6 @@ body.dark-mode .main-nav {
   border-bottom-color: rgba(55, 65, 81, 0.9);
 }
 
-/* Logo text in dark mode */
-body.dark-mode .logo-text span:first-child {
-  color: #e5e7eb;
-  letter-spacing: 0.14em;
-  opacity: 0.85;
-}
-
-body.dark-mode .logo-text span:last-child {
-  color: #f9fafb;
-  font-weight: 600;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-}
-
 body.dark-mode .nav-links a {
   color: #d1d5db;
 }
@@ -1206,28 +1233,6 @@ body.dark-mode .badge {
 }
 
 body.dark-mode .badge i {
-  color: #38bdf8;
-}
-
-/* Hero pill mejorado en dark mode */
-body.dark-mode .hero-pill {
-  background: rgba(15, 23, 42, 0.96);
-  border: 1px solid rgba(148, 163, 184, 0.7);
-  color: #f9fafb;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
-}
-
-body.dark-mode .hero-pill span:first-child {
-  background: radial-gradient(circle at 20% 20%, #e0f2fe, #38bdf8);
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.7);
-  color: #ffffff;
-}
-
-body.dark-mode .hero-pill span:last-child {
-  color: #e5e7eb;
-}
-
-body.dark-mode .hero-pill i {
   color: #38bdf8;
 }
 
@@ -1285,6 +1290,40 @@ body.dark-mode .main-footer {
 }
 
 body.dark-mode .main-footer span {
+  color: #e5e7eb;
+}
+
+/* Fix hero-pill in dark mode */
+body.dark-mode .hero-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  color: #e5e7eb;
+}
+
+body.dark-mode .hero-pill span:first-child {
+  background: radial-gradient(circle at 20% 20%, #1e293b, #0ea5e9);
+  color: #ffffff;
+}
+
+body.dark-mode .hero-pill i {
+  color: #38bdf8;
+}
+
+/* Fix logo text in dark mode */
+body.dark-mode .logo-text span:first-child,
+body.dark-mode .logo-text span:last-child {
+  color: #e5e7eb;
+}
+
+/* Dark mode for publications meta and tags */
+
+body.dark-mode .pub-meta {
+  color: #9ca3af;
+}
+
+body.dark-mode .pub-tag {
+  background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(75, 85, 99, 0.9);
   color: #e5e7eb;
 }
 
