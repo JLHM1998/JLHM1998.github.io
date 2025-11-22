@@ -112,6 +112,9 @@ const translations = {
     pubs_title: "Peer-reviewed journal articles",
     pubs_intro:
       "A selection of recent papers published in Q1 journals, focused on evapotranspiration (ET), crop water stress (CWSI), UAV-based monitoring and precision agriculture in Peruvian irrigated systems.",
+    pubs_new2_title: "METRIC vs AquaCrop in Hyper-Arid Olive Orchards",
+    pubs_new2_meta: "Agriculture (MDPI) · Accepted (2025) · In Press",
+    pubs_new2_desc: "Comparative analysis of evapotranspiration estimates from METRIC (Landsat 8/9), AquaCrop, and FAO-56 in a hyper-arid olive orchard in Southern Peru.",
     pubs_new_title: "Field-Scale Rice Yield Prediction with Sentinel-2 & ML",
     pubs_new_meta: "Agriculture (MDPI) · 2025 · DOI: 10.3390/agriculture15192054",
     pubs_new_desc: "Assessment of ML algorithms (RF, XGBoost, PLSR) for rice yield estimation using Sentinel-2 vegetation indices in the Peruvian coast.",
@@ -142,6 +145,9 @@ const translations = {
     case_2_title: "Yield Prediction with ML & Sentinel-2",
     case_2_desc: "Application of machine learning models (Random Forest, XGBoost) using Sentinel-2 indices to predict rice yield at field scale, validated with extensive ground data.",
     case_2_cta: "Read the full paper",
+    case_3_title: "METRIC vs AquaCrop in Tacna",
+    case_3_desc: "Comparison of satellite-based energy balance models (METRIC) and crop water productivity models (AquaCrop) for water management in hyper-arid olive orchards.",
+    case_3_cta: "Read the paper (Coming soon)",
 
     timeline_label: "Professional path",
     timeline_title: "Professional timeline",
@@ -320,6 +326,9 @@ const translations = {
     pubs_title: "Artículos en revistas indexadas",
     pubs_intro:
       "Selección de artículos recientes publicados en revistas Q1, enfocados en evapotranspiración (ET), estrés hídrico del cultivo (CWSI), monitoreo con UAV y agricultura de precisión en sistemas de riego del Perú.",
+    pubs_new2_title: "METRIC vs AquaCrop en olivares hiperáridos",
+    pubs_new2_meta: "Agriculture (MDPI) · Aceptado (2025) · En prensa",
+    pubs_new2_desc: "Análisis comparativo de estimaciones de evapotranspiración con METRIC (Landsat 8/9), AquaCrop y FAO-56 en un olivar hiperárido del sur del Perú.",
     pubs_new_title: "Predicción de rendimiento de arroz a escala de lote con Sentinel-2 y ML",
     pubs_new_meta: "Agriculture (MDPI) · 2025 · DOI: 10.3390/agriculture15192054",
     pubs_new_desc: "Evaluación de algoritmos de ML (RF, XGBoost, PLSR) para estimación de rendimiento de arroz usando índices de vegetación Sentinel-2 en la costa peruana.",
@@ -352,6 +361,9 @@ const translations = {
     case_2_title: "Predicción de rendimiento con ML y Sentinel-2",
     case_2_desc: "Aplicación de modelos de machine learning (Random Forest, XGBoost) usando índices Sentinel-2 para predecir el rendimiento de arroz a escala de campo, validado con datos de campo.",
     case_2_cta: "Leer el artículo completo",
+    case_3_title: "METRIC vs AquaCrop en Tacna",
+    case_3_desc: "Comparación de modelos de balance de energía satelital (METRIC) y modelos de productividad hídrica (AquaCrop) para la gestión del agua en olivares hiperáridos.",
+    case_3_cta: "Leer artículo (Próximamente)",
 
     timeline_label: "Trayectoria profesional",
     timeline_title: "Línea de tiempo profesional",
