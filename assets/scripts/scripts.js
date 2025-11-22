@@ -669,8 +669,7 @@ function initContactForm() {
     const message = document.getElementById("message")?.value || "";
 
     const subject = encodeURIComponent(
-      `${dict.mail_subject_prefix || "[Website] Consulting inquiry – "}${
-        topic || dict.mail_subject_fallback || "Remote sensing / ET / CWSI"
+      `${dict.mail_subject_prefix || "[Website] Consulting inquiry – "}${topic || dict.mail_subject_fallback || "Remote sensing / ET / CWSI"
       }`
     );
     const body = encodeURIComponent(
@@ -678,6 +677,29 @@ function initContactForm() {
     );
 
     window.location.href = `mailto:joluhumu98@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
+
+// ------------------------------
+// Back to Top Button
+// ------------------------------
+function initBackToTop() {
+  const btn = document.getElementById("backToTop");
+  if (!btn) return;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn.classList.add("visible");
+    } else {
+      btn.classList.remove("visible");
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
 }
 
@@ -695,4 +717,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initLanguageToggle();
   initContactForm();
+  initBackToTop();
 });
